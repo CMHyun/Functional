@@ -33,7 +33,7 @@ const users = [
         function _filter(users, predicate) {
             const new_list = [];
             _each(users, function(val) {
-                if ( predicate(val) ) {
+                if ( predicate(val) ) { // 아닐 경우 false가 return된다.
                     new_list.push(val);
                 }
             });

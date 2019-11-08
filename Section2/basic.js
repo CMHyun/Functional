@@ -85,7 +85,7 @@ const users = [
         return new_list2;
     }
     const over_30 = _filter(users, function(user) { return user.age >= 30; });
-    console.log(over_30);
+    console.log('map first: ', over_30);
 
     const map_names = _map(over_30, function(user) {
         return user.name;
